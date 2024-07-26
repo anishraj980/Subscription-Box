@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Box Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Subscription Box Service</h1>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Subscription Box Service!</h2>
+            <div id="carousel">
+                <img src="subs.jpeg" alt="Subscription Box" width="75%" height="75%">
+            </div>
+            <br>
+            <button onclick="showRegistrationForm()">Get Started</button>
+        </section>
+        <section id="registration" style="display: none;">
+            <h2 style="width: 80%; max-width: 600px; margin: 0 auto;">Register</h2>
+            <form id="registrationForm" style="width: 100%; max-width: 1000px;margin: 0 auto;" class="large-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="subscription-options" style="display: none;">
+            <h2>Choose your subscription box</h2>
+            <div class="option" id="beauty-option">
+                <img src="3_54cb3aae-3785-4f20-8a05-e0707279e6c9@2x.webp" alt="Beauty Subscription Box"width="75%" height="75%">
+                <h3>Beauty Products</h3>
+                <p>Get a curated collection of beauty products every month.</p>
+                <p>Price: $25/month</p>
+                <button onclick="showSubscriptionForm('beauty')">Subscribe</button>
+            </div>
+            <div class="option" id="snacks-option">
+                <img src="download.jpeg" alt="Snacks Subscription Box"width="75%" height="75%">
+                <h3>Snacks</h3>
+                <p>Receive a variety of delicious snacks delivered to your door.</p>
+                <p>Price: $20/month</p>
+                <button onclick="showSubscriptionForm('snacks')">Subscribe</button>
+            </div>
+            <div class="option" id="books-option">
+                <img src="DIY-Book-Organizers-from-Cereal-Boxes_18-700x980.jpg" alt="Books Subscription Box"width="75%" height="75%">
+                <h3>Books</h3>
+                <p>Discover new books tailored to your reading preferences.</p>
+                <p>Price: $30/month</p>
+                <button onclick="showSubscriptionForm('books')">Subscribe</button>
+            </div>
+        </section>
+        <section id="beauty-subscription-form" style="display: none;">
+            <h2>Beauty Subscription</h2>
+            <!-- Subscription form for beauty products will go here -->
+        </section>
+        <section id="snacks-subscription-form" style="display: none;">
+            <h2>Snacks Subscription</h2>
+            <!-- Subscription form for snacks will go here -->
+        </section>
+        <section id="books-subscription-form" style="display: none;">
+            <h2>Books Subscription</h2>
+            <!-- Subscription form for books will go here -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

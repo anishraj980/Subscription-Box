@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+}
+
+header {
+    background-color: #490557;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#carousel img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#large-form {
+    width: 200%; /* Set the width of the form directly */
+    max-width: 2000px; /* Maximum width to maintain responsiveness */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+
+#registrationForm, .option, #beauty-subscription-form, #snacks-subscription-form, #books-subscription-form {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3c065a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Rest of your CSS styles */
+
+#subscription-options {
+    display: flex;
+    flex-direction: column; /* Display options vertically */
+    align-items: center; /* Center options horizontally */
+}
+
+.option {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center; /* Center content within option */
+}
+
+
